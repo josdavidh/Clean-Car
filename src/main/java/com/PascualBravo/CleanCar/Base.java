@@ -35,11 +35,11 @@ public class Base extends javax.swing.JFrame {
 
         jContainerBase = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
         jHeader = new javax.swing.JPanel();
         Cerrar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1080, 620));
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -49,33 +49,20 @@ public class Base extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(0, 102, 102));
 
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(468, 468, 468)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(845, Short.MAX_VALUE))
+            .addGap(0, 1080, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(85, 85, 85)
-                .addComponent(jButton1)
-                .addContainerGap(553, Short.MAX_VALUE))
+            .addGap(0, 560, Short.MAX_VALUE)
         );
 
-        jContainerBase.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 1390, 670));
+        jContainerBase.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1080, 560));
 
-        getContentPane().add(jContainerBase, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1400, 680));
+        getContentPane().add(jContainerBase, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1080, 560));
 
         jHeader.setBackground(new java.awt.Color(26, 209, 250));
         jHeader.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -86,17 +73,10 @@ public class Base extends javax.swing.JFrame {
         Cerrar.setPreferredSize(new java.awt.Dimension(45, 40));
         jHeader.add(Cerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 0, -1, -1));
 
-        getContentPane().add(jHeader, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1400, -1));
+        getContentPane().add(jHeader, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1080, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        Servicios servicios = new Servicios();
-        
-        servicios.show();
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -135,7 +115,6 @@ public class Base extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Cerrar;
-    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jContainerBase;
     private javax.swing.JPanel jHeader;
     private javax.swing.JPanel jPanel1;
