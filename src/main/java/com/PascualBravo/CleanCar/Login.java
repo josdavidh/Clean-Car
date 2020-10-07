@@ -19,15 +19,14 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
-         this.setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null);
         ImageIcon user = new ImageIcon("src/main/java/Recursos/login.png");
         users.setIcon(new ImageIcon(user.getImage().getScaledInstance(users.getWidth(), users.getHeight(), Image.SCALE_DEFAULT)));
 
         ImageIcon logos = new ImageIcon("src/main/java/Recursos/logoazul.jpeg");
-        this.logo.setIcon(new ImageIcon(logos.getImage().getScaledInstance(logo.getWidth()-2, logo.getHeight()-2, Image.SCALE_DEFAULT)));
-       
-    }
+        this.logo.setIcon(new ImageIcon(logos.getImage().getScaledInstance(logo.getWidth() - 2, logo.getHeight() - 2, Image.SCALE_DEFAULT)));
 
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -58,11 +57,17 @@ public class Login extends javax.swing.JFrame {
         jTextField3 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImages(null);
         setUndecorated(true);
         setOpacity(0.98F);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                jPanel1MouseDragged(evt);
+            }
+        });
         jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jPanel1MousePressed(evt);
@@ -182,7 +187,7 @@ public class Login extends javax.swing.JFrame {
         jTextField3.setCaretColor(new java.awt.Color(0, 102, 102));
         jPanel2.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 220, 210, -1));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, 440, 400));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, 430, 400));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -190,14 +195,22 @@ public class Login extends javax.swing.JFrame {
     private void xMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_xMouseClicked
         this.dispose();
     }//GEN-LAST:event_xMouseClicked
- 
-    private void jPanel2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MousePressed
-      
-    }//GEN-LAST:event_jPanel2MousePressed
 
+    private void jPanel2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MousePressed
+
+    }//GEN-LAST:event_jPanel2MousePressed
+    int xx, xy;
     private void jPanel1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MousePressed
-       
+        xx = evt.getX();
+        xy = evt.getY();
     }//GEN-LAST:event_jPanel1MousePressed
+
+    private void jPanel1MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseDragged
+        int x = evt.getXOnScreen();
+        int y = evt.getYOnScreen();
+
+        this.setLocation(x - xx, y - xy);
+    }//GEN-LAST:event_jPanel1MouseDragged
 
     /**
      * @param args the command line arguments
@@ -235,7 +248,7 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    public javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -247,10 +260,10 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPasswordField jPasswordField1;
+    public javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JTextField jTextField3;
+    public javax.swing.JTextField jTextField3;
     private javax.swing.JLabel logo;
     private javax.swing.JLabel users;
     private javax.swing.JTextField x;
