@@ -96,8 +96,6 @@ public class vista1 extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(0, 102, 102));
         jPanel2.setForeground(new java.awt.Color(246, 246, 251));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lblCarro.setText("carro");
         jPanel2.add(lblCarro, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 380, 140, 50));
 
         jTable1.setBackground(new java.awt.Color(0, 153, 204));
