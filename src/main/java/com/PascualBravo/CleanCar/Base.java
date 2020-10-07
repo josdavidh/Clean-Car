@@ -39,8 +39,8 @@ public class Base extends javax.swing.JFrame {
         Cerrar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1080, 620));
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(1400, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jContainerBase.setBackground(new java.awt.Color(255, 255, 255));
@@ -53,16 +53,16 @@ public class Base extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1390, Short.MAX_VALUE)
+            .addGap(0, 1080, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 670, Short.MAX_VALUE)
+            .addGap(0, 560, Short.MAX_VALUE)
         );
 
-        jContainerBase.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 1390, 670));
+        jContainerBase.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1080, 560));
 
-        getContentPane().add(jContainerBase, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1400, 680));
+        getContentPane().add(jContainerBase, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1080, 560));
 
         jHeader.setBackground(new java.awt.Color(26, 209, 250));
         jHeader.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -73,7 +73,7 @@ public class Base extends javax.swing.JFrame {
         Cerrar.setPreferredSize(new java.awt.Dimension(45, 40));
         jHeader.add(Cerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 0, -1, -1));
 
-        getContentPane().add(jHeader, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1400, -1));
+        getContentPane().add(jHeader, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1080, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
