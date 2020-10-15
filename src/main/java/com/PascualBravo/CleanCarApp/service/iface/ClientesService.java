@@ -5,7 +5,7 @@ import com.PascualBravo.CleanCarApp.models.entity.Clientes;
 import java.util.List;
 
 public interface ClientesService {
-    void create(Clientes clientes);
+    boolean create(Clientes clientes);
     
     List<Clientes> getAll();
     

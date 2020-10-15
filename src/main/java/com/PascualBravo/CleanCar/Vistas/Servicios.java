@@ -37,14 +37,14 @@ public class Servicios extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         cancelarServicio = new javax.swing.JButton();
-        confirmarServicio = new javax.swing.JButton();
+        btnConfirmarServicio = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jTextField2 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        txtNombreCliente = new javax.swing.JTextField();
         jSeparator2 = new javax.swing.JSeparator();
         jLabel3 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        txtTelefonoCliente = new javax.swing.JTextField();
         jSeparator3 = new javax.swing.JSeparator();
         jLabel5 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -66,7 +66,7 @@ public class Servicios extends javax.swing.JFrame {
         jTextField8 = new javax.swing.JTextField();
         jSeparator7 = new javax.swing.JSeparator();
         jLabel14 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
+        txtCedulaCliente = new javax.swing.JTextField();
         jSeparator8 = new javax.swing.JSeparator();
         jLabel15 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
@@ -96,13 +96,13 @@ public class Servicios extends javax.swing.JFrame {
         });
         jPanel2.add(cancelarServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 480, 160, 50));
 
-        confirmarServicio.setBackground(new java.awt.Color(0, 153, 204));
-        confirmarServicio.setFont(new java.awt.Font("Segoe UI Semibold", 1, 24)); // NOI18N
-        confirmarServicio.setForeground(new java.awt.Color(0, 0, 0));
-        confirmarServicio.setText("Confirmar");
-        confirmarServicio.setBorder(null);
-        confirmarServicio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(confirmarServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 480, 180, 50));
+        btnConfirmarServicio.setBackground(new java.awt.Color(0, 153, 204));
+        btnConfirmarServicio.setFont(new java.awt.Font("Segoe UI Semibold", 1, 24)); // NOI18N
+        btnConfirmarServicio.setForeground(new java.awt.Color(0, 0, 0));
+        btnConfirmarServicio.setText("Confirmar");
+        btnConfirmarServicio.setBorder(null);
+        btnConfirmarServicio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(btnConfirmarServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 480, 180, 50));
         jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 220, 10));
 
         jTextField2.setBackground(new java.awt.Color(246, 246, 251));
@@ -122,17 +122,17 @@ public class Servicios extends javax.swing.JFrame {
         jLabel2.setText("Dueño ");
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 130, 120, 30));
 
-        jTextField3.setBackground(new java.awt.Color(246, 246, 251));
-        jTextField3.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField3.setBorder(null);
-        jTextField3.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        txtNombreCliente.setBackground(new java.awt.Color(246, 246, 251));
+        txtNombreCliente.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
+        txtNombreCliente.setForeground(new java.awt.Color(0, 0, 0));
+        txtNombreCliente.setBorder(null);
+        txtNombreCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtNombreCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                txtNombreClienteActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, 240, 30));
+        jPanel2.add(txtNombreCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, 240, 30));
         jPanel2.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 200, 240, 10));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
@@ -140,17 +140,17 @@ public class Servicios extends javax.swing.JFrame {
         jLabel3.setText("Teléfono de contacto");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 220, 220, 30));
 
-        jTextField4.setBackground(new java.awt.Color(246, 246, 251));
-        jTextField4.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
-        jTextField4.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField4.setBorder(null);
-        jTextField4.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+        txtTelefonoCliente.setBackground(new java.awt.Color(246, 246, 251));
+        txtTelefonoCliente.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
+        txtTelefonoCliente.setForeground(new java.awt.Color(0, 0, 0));
+        txtTelefonoCliente.setBorder(null);
+        txtTelefonoCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtTelefonoCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
+                txtTelefonoClienteActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 260, 290, 30));
+        jPanel2.add(txtTelefonoCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 260, 290, 30));
         jPanel2.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 300, 290, 30));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI Light", 1, 80)); // NOI18N
@@ -267,17 +267,17 @@ public class Servicios extends javax.swing.JFrame {
         jLabel14.setText("Tipo de lavado");
         jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 170, 170, 30));
 
-        jTextField9.setBackground(new java.awt.Color(246, 246, 251));
-        jTextField9.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
-        jTextField9.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField9.setBorder(null);
-        jTextField9.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        jTextField9.addActionListener(new java.awt.event.ActionListener() {
+        txtCedulaCliente.setBackground(new java.awt.Color(246, 246, 251));
+        txtCedulaCliente.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
+        txtCedulaCliente.setForeground(new java.awt.Color(0, 0, 0));
+        txtCedulaCliente.setBorder(null);
+        txtCedulaCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtCedulaCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField9ActionPerformed(evt);
+                txtCedulaClienteActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 70, 250, 30));
+        jPanel2.add(txtCedulaCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 70, 250, 30));
         jPanel2.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, 250, 10));
 
         jLabel15.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
@@ -307,13 +307,13 @@ public class Servicios extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void txtNombreClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreClienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_txtNombreClienteActionPerformed
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+    private void txtTelefonoClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelefonoClienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_txtTelefonoClienteActionPerformed
 
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
         // TODO add your handling code here:
@@ -331,9 +331,9 @@ public class Servicios extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField8ActionPerformed
 
-    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
+    private void txtCedulaClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCedulaClienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField9ActionPerformed
+    }//GEN-LAST:event_txtCedulaClienteActionPerformed
 
     private void cancelarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarServicioActionPerformed
         // TODO add your handling code here:
@@ -375,8 +375,8 @@ public class Servicios extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton cancelarServicio;
-    private javax.swing.JButton confirmarServicio;
+    public javax.swing.JButton btnConfirmarServicio;
+    public javax.swing.JButton cancelarServicio;
     private javax.swing.JLabel editarPrecioServicio;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
@@ -406,12 +406,12 @@ public class Servicios extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator8;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    public javax.swing.JTextField txtCedulaCliente;
+    public javax.swing.JTextField txtNombreCliente;
+    public javax.swing.JTextField txtTelefonoCliente;
     // End of variables declaration//GEN-END:variables
 }

@@ -1,6 +1,5 @@
 package com.PascualBravo.CleanCarApp.service.impl;
 
-
 import com.PascualBravo.CleanCarApp.models.entity.Clientes;
 import com.PascualBravo.CleanCarApp.models.repository.ClientesRepository;
 import com.PascualBravo.CleanCarApp.service.iface.ClientesService;
@@ -15,22 +14,28 @@ public class ClientesServiceImpl implements ClientesService {
 
     @Autowired
     private ClientesRepository clientesRepository;
-    
+
     @Override
-    public void create(Clientes clientes) {
+    public boolean create(Clientes clientes) {
         clientesRepository.save(clientes);
+        Optional<Clientes> existClientes = clientesRepository.findById(clientes.getCcCliente());
+        if (existClientes.isPresent()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override
     public List<Clientes> getAll() {
-       List<Clientes> clientes=new ArrayList<>();
-       clientesRepository.findAll().forEach(clientes::add);
-       return clientes;
+        List<Clientes> clientes = new ArrayList<>();
+        clientesRepository.findAll().forEach(clientes::add);
+        return clientes;
     }
 
     @Override
     public void update(int cedula, Clientes clientes) {
-       Optional<Clientes> existClientes=clientesRepository.findById(cedula);
+        Optional<Clientes> existClientes = clientesRepository.findById(cedula);
         if (existClientes.isPresent()) {
             existClientes.get().setNombre(clientes.getNombre());
             existClientes.get().setTelefono(clientes.getTelefono());
@@ -40,10 +45,10 @@ public class ClientesServiceImpl implements ClientesService {
 
     @Override
     public void delete(int cedula) {
-        Optional<Clientes> existClientes=clientesRepository.findById(cedula);
+        Optional<Clientes> existClientes = clientesRepository.findById(cedula);
         if (existClientes.isPresent()) {
             clientesRepository.delete(existClientes.get());
         }
     }
-    
+
 }
