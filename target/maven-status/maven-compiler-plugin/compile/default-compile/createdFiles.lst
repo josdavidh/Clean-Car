@@ -5,6 +5,7 @@ com\PascualBravo\CleanCar\Vistas\Servicios$6.class
 com\PascualBravo\CleanCar\Vistas\Servicios$8.class
 com\PascualBravo\CleanCarApp\models\repository\AdministradoresRepository.class
 com\PascualBravo\CleanCar\Vistas\Login$1.class
+com\PascualBravo\CleanCarApp\controller\ClientesController.class
 com\PascualBravo\CleanCar\Vistas\Login.class
 com\PascualBravo\CleanCarApp\service\impl\AdministradoresServiceImpl.class
 com\PascualBravo\CleanCarApp\models\entity\Empleados.class
