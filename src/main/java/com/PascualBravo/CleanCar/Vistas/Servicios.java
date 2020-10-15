@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.PascualBravo.CleanCar;
+package com.PascualBravo.CleanCar.Vistas;
 
 import java.awt.Image;
 import javax.swing.ImageIcon;
